@@ -4,12 +4,11 @@ const text = document.querySelector('.text');
 const button = document.querySelector('.button');
 
 function thank(x) {
-    var res = x;
     button.addEventListener('click', () => {
-        if (res != undefined) {
+        if (x != undefined) {
             page_rating.classList.remove('active');
             page_thank.classList.add('active');
-            text.innerHTML = '&nbsp' + res + '&nbsp';
+            text.innerHTML = '&nbsp' + x + '&nbsp';
         }
     })
 }
